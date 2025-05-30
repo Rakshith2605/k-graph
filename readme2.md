@@ -80,6 +80,16 @@ python quickstart.py
 - If you use conda, ensure you are in the correct environment before running the project.
 - If you encounter issues with environment variables not loading, check that `python-dotenv` is installed and that your code calls `load_dotenv()` early in execution.
 - For further debugging, add `print(os.environ)` or `print(os.getenv('OPENAI_API_KEY'))` in your script to verify environment variable values.
+- **Exiting a Virtual Environment:**  
+  - If you activated a venv (using `source venv/bin/activate`), simply run:
+    ```sh
+    deactivate
+    ```
+  - If you are using a conda environment, run:
+    ```sh
+    conda deactivate
+    ```
+  (This will exit the virtual environment and return you to your system's default Python.)
 
 ---
 
